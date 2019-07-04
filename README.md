@@ -37,21 +37,22 @@ Suraj has a message, which is a string S with length N containing only lowercase
 - Swap the first and second character of the string  S, then swap the 3rd and 4th character, then the 5th and 6th character and so on. If the length of S is odd, the last character should not be swapped with any other.
 - Replace each occurrence of the letter 'a' in the message obtained after the first step by the letter 'z', each occurrence of 'b' by 'y', each occurrence of 'c' by 'x', etc, and each occurrence of 'z' in the message obtained after the first step by 'a'.
 The string produced in the second step is the encoded message. Help Suraj and find this message.
-INPUT
+
+**INPUT**
 The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
 The first line of each test case contains a single integer N.
 The second line contains the message string S.
-OUTPUT
+**OUTPUT**
 For each test case, print a single line containing one string — the encoded message.
 
-SAMPLE INPUT:
+**SAMPLE INPUT**:
 - 2
 - 10
 - encryption
 - 9
 - Bandwidth
 
-SAMPLE OUTPUT:
+**SAMPLE OUTPUT**:
 - mvixkbrgml
 - Zywmrdgws
 

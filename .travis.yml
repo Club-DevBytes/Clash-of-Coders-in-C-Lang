@@ -5,9 +5,9 @@ matrix:
         - chmod +x scripts/dropbox_uploader.sh
       script:
         - scripts/dropbox_uploader.sh
-        - scripts/dropbox_uploader.sh download /cases/input.txt input.txt
-        - scripts/dropbox_uploader.sh download /cases/input1.txt input1.txt
-        - scripts/dropbox_uploader.sh download /cases/input2.txt input2.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/input.txt input.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/input1.txt input1.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/input2.txt input2.txt
         - clang -coverage -oo main.c -o sample_program
         - echo "Compiling Test Case 0"
         - ./sample_program < input.txt > stored_output.txt
@@ -15,23 +15,23 @@ matrix:
         - ./sample_program < input1.txt > stored_output1.txt
         - echo "Compiling Test Case 2"
         - ./sample_program < input2.txt > stored_output2.txt
-        - scripts/dropbox_uploader.sh upload stored_output.txt /cases/stored_output.txt
-        - scripts/dropbox_uploader.sh upload stored_output1.txt /cases/stored_output1.txt
-        - scripts/dropbox_uploader.sh upload stored_output2.txt /cases/stored_output2.txt
+        - scripts/dropbox_uploader.sh upload stored_output.txt /q-2cases/stored_output.txt
+        - scripts/dropbox_uploader.sh upload stored_output1.txt /q-2cases/stored_output1.txt
+        - scripts/dropbox_uploader.sh upload stored_output2.txt /q-2cases/stored_output2.txt
         
     - language: python
       python: "3.6"
       before_script:
         - chmod +x scripts/dropbox_uploader.sh
         - scripts/dropbox_uploader.sh
-        - scripts/dropbox_uploader.sh download /cases/output.txt output.txt
-        - scripts/dropbox_uploader.sh download /cases/output1.txt output1.txt
-        - scripts/dropbox_uploader.sh download /cases/output2.txt output2.txt
-        - scripts/dropbox_uploader.sh download /cases/stored_output.txt stored_output.txt
-        - scripts/dropbox_uploader.sh download /cases/stored_output1.txt stored_output1.txt
-        - scripts/dropbox_uploader.sh download /cases/stored_output2.txt stored_output2.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/output.txt output.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/output1.txt output1.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/output2.txt output2.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/stored_output.txt stored_output.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/stored_output1.txt stored_output1.txt
+        - scripts/dropbox_uploader.sh download /q-2cases/stored_output2.txt stored_output2.txt
       script:
         - python scripts/test_cases_checker.py
-        - scripts/dropbox_uploader.sh delete /cases/stored_output.txt
-        - scripts/dropbox_uploader.sh delete /cases/stored_output1.txt
-        - scripts/dropbox_uploader.sh delete /cases/stored_output2.txt
+        - scripts/dropbox_uploader.sh delete /q-2cases/stored_output.txt
+        - scripts/dropbox_uploader.sh delete /q-2cases/stored_output1.txt
+        - scripts/dropbox_uploader.sh delete /q-2cases/stored_output2.txt
