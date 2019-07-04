@@ -1,1 +1,0 @@
-unicode_string = unicode('r�xirfg', encoding)
