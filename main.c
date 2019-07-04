@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int main(void) {
+int main() {
 	int t;
 	scanf("%d", &t);
 	while(t--){
