@@ -1,0 +1,11 @@
+5
+8
+computer
+4
+word
+5
+excel
+10
+powerpoint
+7
+Circuit
