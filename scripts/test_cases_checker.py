@@ -11,8 +11,8 @@
 
 class Check_Code():
     def getResults(self):
-        values = [] # Original Output stored in this list
-        valuesFinal = []
+        values = [] # Un Refactored Original Output stored in this list
+        valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
         outputCases = open("output.txt", "r")
@@ -20,6 +20,7 @@ class Check_Code():
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
+            """refactored stored output"""
             valuesFinal.append(bitches.strip())
         userOutput = open("stored_output.txt", "r")
         for outputs in userOutput:
@@ -41,7 +42,7 @@ class Check_Code():
         print("Test Case 0: Passed")
     def getResults1(self):
         values = [] # Original Output stored in this list
-        valuesFinal = []
+        valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
         outputCases = open("output1.txt", "r")
@@ -49,6 +50,7 @@ class Check_Code():
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
+            """refactored stored output"""
             valuesFinal.append(bitches.strip())
         userOutput = open("stored_output1.txt", "r")
         for outputs in userOutput:
@@ -70,7 +72,7 @@ class Check_Code():
         print("Test Case 1: Passed")
     def getResults2(self):
         values = [] # Original Output stored in this list
-        valuesFinal = []
+        valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
         outputCases = open("output2.txt", "r")
@@ -78,6 +80,7 @@ class Check_Code():
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
+            """refactored stored output"""
             valuesFinal.append(bitches.strip())
         userOutput = open("stored_output2.txt", "r")
         for outputs in userOutput:
