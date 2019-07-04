@@ -1,3 +1,5 @@
+// g++ main.cpp -o main
+// ./main < input.txt > stored_output.txt
 #include <iostream>
 using namespace std;
 
