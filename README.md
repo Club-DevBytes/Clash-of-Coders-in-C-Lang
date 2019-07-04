@@ -43,16 +43,17 @@ The first line of each test case contains a single integer N.
 The second line contains the message string S.
 OUTPUT
 For each test case, print a single line containing one string — the encoded message.
-SAMPLE INPUT
-2
-10
-encryption
-9
-Bandwidth
 
-SAMPLE OUTPUT
-mvixkbrgml
-Zywmrdgws
+SAMPLE INPUT:
+- 2
+- 10
+- encryption
+- 9
+- Bandwidth
+
+SAMPLE OUTPUT:
+- mvixkbrgml
+- Zywmrdgws
 
 
 
