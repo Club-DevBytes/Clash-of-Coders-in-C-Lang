@@ -15,14 +15,14 @@ class Check_Code():
         valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
-        outputCases = open("output.txt", "r")
+        outputCases = open("q2cases/output.txt", "r")
         for cases in outputCases:
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
             """refactored stored output"""
             valuesFinal.append(bitches.strip())
-        userOutput = open("stored_output.txt", "r")
+        userOutput = open("q2cases/stored_output.txt", "r")
         for outputs in userOutput:
             """Unrefractored user outputs """
             fetchedResults.append(outputs)
@@ -45,14 +45,14 @@ class Check_Code():
         valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
-        outputCases = open("output1.txt", "r")
+        outputCases = open("q2cases/output1.txt", "r")
         for cases in outputCases:
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
             """refactored stored output"""
             valuesFinal.append(bitches.strip())
-        userOutput = open("stored_output1.txt", "r")
+        userOutput = open("q2cases/stored_output1.txt", "r")
         for outputs in userOutput:
             """Unrefractored user outputs """
             fetchedResults.append(outputs)
@@ -65,7 +65,7 @@ class Check_Code():
                     pass
                 else:
                     raise Exception(
-                        "Test Case 0 : failed" + "\n"
+                        "Test Case 1 : failed" + "\n"
                         "YOUR OUTPUT: " + fetchedResultsFinal[items] + "\n"
                         "EXPECTED OUTPUT: " + valuesFinal[items]
                     )
@@ -75,14 +75,14 @@ class Check_Code():
         valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
-        outputCases = open("output2.txt", "r")
+        outputCases = open("q2cases/output2.txt", "r")
         for cases in outputCases:
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
             """refactored stored output"""
             valuesFinal.append(bitches.strip())
-        userOutput = open("stored_output2.txt", "r")
+        userOutput = open("q2cases/stored_output2.txt", "r")
         for outputs in userOutput:
             """Unrefractored user outputs """
             fetchedResults.append(outputs)
@@ -95,7 +95,7 @@ class Check_Code():
                     pass
                 else:
                     raise Exception(
-                        "Test Case 0 : failed" + "\n"
+                        "Test Case 2 : failed" + "\n"
                         "YOUR OUTPUT: " + fetchedResultsFinal[items] + "\n"
                         "EXPECTED OUTPUT: " + valuesFinal[items]
                     )
