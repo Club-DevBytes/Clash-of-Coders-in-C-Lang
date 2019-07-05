@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+void main() {
 	int t;
 	scanf("%d", &t);
 	while(t--){
@@ -28,5 +28,4 @@ int main() {
 	    else
 	    printf("%d\n", count);   
 	}
-	return 0;
 }
