@@ -15,14 +15,14 @@ class Check_Code():
         valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
-        outputCases = open("q-2cases/output.txt", "r")
+        outputCases = open("output.txt", "r")
         for cases in outputCases:
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
             """refactored stored output"""
             valuesFinal.append(bitches.strip())
-        userOutput = open("q-2cases/stored_output.txt", "r")
+        userOutput = open("stored_output.txt", "r")
         for outputs in userOutput:
             """Unrefractored user outputs """
             fetchedResults.append(outputs)
@@ -45,14 +45,14 @@ class Check_Code():
         valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
-        outputCases = open("q-2cases/output1.txt", "r")
+        outputCases = open("output1.txt", "r")
         for cases in outputCases:
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
             """refactored stored output"""
             valuesFinal.append(bitches.strip())
-        userOutput = open("q-2cases/stored_output1.txt", "r")
+        userOutput = open("stored_output1.txt", "r")
         for outputs in userOutput:
             """Unrefractored user outputs """
             fetchedResults.append(outputs)
@@ -75,14 +75,14 @@ class Check_Code():
         valuesFinal = [] # Refactored Original Output stored in this list
         fetchedResults = [] # Un Refractored user generated outputs stored here
         fetchedResultsFinal = [] # Final Refactored User Generated Output list
-        outputCases = open("q-2cases/output2.txt", "r")
+        outputCases = open("output2.txt", "r")
         for cases in outputCases:
             """Stores the original output in Values"""
             values.append(cases)
         for bitches in values:
             """refactored stored output"""
             valuesFinal.append(bitches.strip())
-        userOutput = open("q-2cases/stored_output2.txt", "r")
+        userOutput = open("stored_output2.txt", "r")
         for outputs in userOutput:
             """Unrefractored user outputs """
             fetchedResults.append(outputs)
